@@ -41,6 +41,8 @@
 		947B60B829DE0DBD00339B2B /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60B729DE0DBD00339B2B /* Town.swift */; };
 		947B60BA29DE12E700339B2B /* maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60B929DE12E700339B2B /* maze.swift */; };
 		947B60BE29DF6A1600339B2B /* TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60BD29DF6A1600339B2B /* TopologicalSort.swift */; };
+		947B60C029E0966900339B2B /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60BF29E0966900339B2B /* CourseSchedule.swift */; };
+		947B60C229E0B2D900339B2B /* CourseScheduleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60C129E0B2D900339B2B /* CourseScheduleII.swift */; };
 		94B839D129BFBAF80034E019 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839CF29BFBAF80034E019 /* Board.swift */; };
 		94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D029BFBAF80034E019 /* QueensSolver.swift */; };
 		94B839D729BFBD6C0034E019 /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D629BFBD6C0034E019 /* BackTracking.swift */; };
@@ -98,6 +100,8 @@
 		947B60B929DE12E700339B2B /* maze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maze.swift; sourceTree = "<group>"; };
 		947B60BB29DE1BC200339B2B /* SushiCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SushiCases; sourceTree = "<group>"; };
 		947B60BD29DF6A1600339B2B /* TopologicalSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort.swift; sourceTree = "<group>"; };
+		947B60BF29E0966900339B2B /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
+		947B60C129E0B2D900339B2B /* CourseScheduleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleII.swift; sourceTree = "<group>"; };
 		94B839CF29BFBAF80034E019 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		94B839D029BFBAF80034E019 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		94B839D629BFBD6C0034E019 /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				947B60BD29DF6A1600339B2B /* TopologicalSort.swift */,
+				947B60BF29E0966900339B2B /* CourseSchedule.swift */,
+				947B60C129E0B2D900339B2B /* CourseScheduleII.swift */,
 			);
 			path = Topology;
 			sourceTree = "<group>";
@@ -333,12 +339,14 @@
 				9447BC6129CA56870090706C /* AdjacencyList.swift in Sources */,
 				947B60A229DB890C00339B2B /* LowestCommonAncestor.swift in Sources */,
 				9447BC5F29CA545E0090706C /* AdjacencyMetrix.swift in Sources */,
+				947B60C229E0B2D900339B2B /* CourseScheduleII.swift in Sources */,
 				9447BC5529C51FA20090706C /* DesigningAlgorithms.swift in Sources */,
 				9447BC5C29C90DB00090706C /* Queue.swift in Sources */,
 				947B60B629DCF06700339B2B /* Bridges.swift in Sources */,
 				9447BC5A29C905D40090706C /* Stack.swift in Sources */,
 				947B60BE29DF6A1600339B2B /* TopologicalSort.swift in Sources */,
 				9447BC6D29CB87710090706C /* CountCyclicPermutation.swift in Sources */,
+				947B60C029E0966900339B2B /* CourseSchedule.swift in Sources */,
 				9447BC6F29CBA29E0090706C /* repeatSequence.swift in Sources */,
 				9447BC6929CAB7150090706C /* BipartiteGraph.swift in Sources */,
 				9402E23D29BA87E8008AEB09 /* Recursion.swift in Sources */,
