@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9402E23529BA87BB008AEB09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402E23429BA87BB008AEB09 /* main.swift */; };
+		9402E23D29BA87E8008AEB09 /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402E23C29BA87E8008AEB09 /* Recursion.swift */; };
+		9402E24029BBDE32008AEB09 /* ExhaustiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402E23F29BBDE32008AEB09 /* ExhaustiveSearch.swift */; };
+		9402E24329BBE076008AEB09 /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402E24229BBE076008AEB09 /* String+DPStringTool.swift */; };
+		9447BC5029C3B40E0090706C /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC4F29C3B40E0090706C /* Searching.swift */; };
+		9447BC5229C3B4280090706C /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC5129C3B4280090706C /* Sorting.swift */; };
+		9447BC5529C51FA20090706C /* DesigningAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC5429C51FA20090706C /* DesigningAlgorithms.swift */; };
+		9447BC5829C8F49A0090706C /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC5729C8F49A0090706C /* Bag.swift */; };
+		9447BC5A29C905D40090706C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC5929C905D40090706C /* Stack.swift */; };
+		9447BC5C29C90DB00090706C /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC5B29C90DB00090706C /* Queue.swift */; };
+		9447BC5F29CA545E0090706C /* AdjacencyMetrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC5E29CA545E0090706C /* AdjacencyMetrix.swift */; };
+		9447BC6129CA56870090706C /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6029CA56870090706C /* AdjacencyList.swift */; };
+		9447BC6329CA5C010090706C /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6229CA5C010090706C /* BFS.swift */; };
+		9447BC6529CA5C0C0090706C /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6429CA5C0C0090706C /* DFS.swift */; };
+		9447BC6729CA80BC0090706C /* ConnectedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6629CA80BC0090706C /* ConnectedComponent.swift */; };
+		9447BC6929CAB7150090706C /* BipartiteGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6829CAB7150090706C /* BipartiteGraph.swift */; };
+		9447BC6B29CB720C0090706C /* FindCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6A29CB720C0090706C /* FindCycle.swift */; };
+		9447BC6D29CB87710090706C /* CountCyclicPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6C29CB87710090706C /* CountCyclicPermutation.swift */; };
+		9447BC6F29CBA29E0090706C /* repeatSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC6E29CBA29E0090706C /* repeatSequence.swift */; };
+		9447BC7229CD294F0090706C /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC7129CD294F0090706C /* Tree.swift */; };
+		9447BC7429CEA30E0090706C /* SearchParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC7329CEA30E0090706C /* SearchParent.swift */; };
+		9447BC7629CEBE820090706C /* Diameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447BC7529CEBE820090706C /* Diameter.swift */; };
+		947B60A029DB823500339B2B /* IndexPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B609F29DB823500339B2B /* IndexPriorityQueue.swift */; };
+		947B60A229DB890C00339B2B /* LowestCommonAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60A129DB890C00339B2B /* LowestCommonAncestor.swift */; };
+		947B60A729DB9F8600339B2B /* SushiReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60A629DB9F8600339B2B /* SushiReviews.swift */; };
+		947B60AA29DCB61B00339B2B /* TomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60A929DCB61B00339B2B /* TomatoFarm.swift */; };
+		947B60AC29DCCD1300339B2B /* BreadthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60AB29DCCD1300339B2B /* BreadthFirstSearch.swift */; };
+		947B60AE29DCCD3100339B2B /* Error+CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60AD29DCCD3100339B2B /* Error+CustomErrors.swift */; };
+		947B60B029DCCD5000339B2B /* DepthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60AF29DCCD5000339B2B /* DepthFirstSearch.swift */; };
+		947B60B229DCCE6C00339B2B /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60B129DCCE6C00339B2B /* Graph.swift */; };
+		947B60B629DCF06700339B2B /* Bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60B529DCF06700339B2B /* Bridges.swift */; };
+		947B60B829DE0DBD00339B2B /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60B729DE0DBD00339B2B /* Town.swift */; };
+		947B60BA29DE12E700339B2B /* maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60B929DE12E700339B2B /* maze.swift */; };
+		947B60BE29DF6A1600339B2B /* TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60BD29DF6A1600339B2B /* TopologicalSort.swift */; };
+		94B839D129BFBAF80034E019 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839CF29BFBAF80034E019 /* Board.swift */; };
+		94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D029BFBAF80034E019 /* QueensSolver.swift */; };
+		94B839D729BFBD6C0034E019 /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D629BFBD6C0034E019 /* BackTracking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9402E22F29BA87BB008AEB09 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9402E23129BA87BB008AEB09 /* SwiftAGDS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAGDS; sourceTree = BUILT_PRODUCTS_DIR; };
+		9402E23429BA87BB008AEB09 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9402E23C29BA87E8008AEB09 /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
+		9402E23E29BA91A3008AEB09 /* story.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = story.txt; sourceTree = "<group>"; };
+		9402E23F29BBDE32008AEB09 /* ExhaustiveSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhaustiveSearch.swift; sourceTree = "<group>"; };
+		9402E24229BBE076008AEB09 /* String+DPStringTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DPStringTool.swift"; sourceTree = "<group>"; };
+		9447BC4F29C3B40E0090706C /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
+		9447BC5129C3B4280090706C /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		9447BC5429C51FA20090706C /* DesigningAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesigningAlgorithms.swift; sourceTree = "<group>"; };
+		9447BC5729C8F49A0090706C /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		9447BC5929C905D40090706C /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		9447BC5B29C90DB00090706C /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		9447BC5E29CA545E0090706C /* AdjacencyMetrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMetrix.swift; sourceTree = "<group>"; };
+		9447BC6029CA56870090706C /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		9447BC6229CA5C010090706C /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
+		9447BC6429CA5C0C0090706C /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
+		9447BC6629CA80BC0090706C /* ConnectedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponent.swift; sourceTree = "<group>"; };
+		9447BC6829CAB7150090706C /* BipartiteGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BipartiteGraph.swift; sourceTree = "<group>"; };
+		9447BC6A29CB720C0090706C /* FindCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCycle.swift; sourceTree = "<group>"; };
+		9447BC6C29CB87710090706C /* CountCyclicPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCyclicPermutation.swift; sourceTree = "<group>"; };
+		9447BC6E29CBA29E0090706C /* repeatSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repeatSequence.swift; sourceTree = "<group>"; };
+		9447BC7129CD294F0090706C /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		9447BC7329CEA30E0090706C /* SearchParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParent.swift; sourceTree = "<group>"; };
+		9447BC7529CEBE820090706C /* Diameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diameter.swift; sourceTree = "<group>"; };
+		947B609F29DB823500339B2B /* IndexPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPriorityQueue.swift; sourceTree = "<group>"; };
+		947B60A129DB890C00339B2B /* LowestCommonAncestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestor.swift; sourceTree = "<group>"; };
+		947B60A429DB9D3A00339B2B /* parent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = parent; sourceTree = "<group>"; };
+		947B60A529DB9D4F00339B2B /* LCATestCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LCATestCases; sourceTree = "<group>"; };
+		947B60A629DB9F8600339B2B /* SushiReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiReviews.swift; sourceTree = "<group>"; };
+		947B60A929DCB61B00339B2B /* TomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoFarm.swift; sourceTree = "<group>"; };
+		947B60AB29DCCD1300339B2B /* BreadthFirstSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearch.swift; sourceTree = "<group>"; };
+		947B60AD29DCCD3100339B2B /* Error+CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+CustomErrors.swift"; sourceTree = "<group>"; };
+		947B60AF29DCCD5000339B2B /* DepthFirstSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthFirstSearch.swift; sourceTree = "<group>"; };
+		947B60B129DCCE6C00339B2B /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		947B60B529DCF06700339B2B /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
+		947B60B729DE0DBD00339B2B /* Town.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
+		947B60B929DE12E700339B2B /* maze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maze.swift; sourceTree = "<group>"; };
+		947B60BB29DE1BC200339B2B /* SushiCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SushiCases; sourceTree = "<group>"; };
+		947B60BD29DF6A1600339B2B /* TopologicalSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort.swift; sourceTree = "<group>"; };
+		94B839CF29BFBAF80034E019 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		94B839D029BFBAF80034E019 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
+		94B839D629BFBD6C0034E019 /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9402E22E29BA87BB008AEB09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9402E22829BA87BB008AEB09 = {
+			isa = PBXGroup;
+			children = (
+				947B60A329DB9D1100339B2B /* SwiftAGDSTests */,
+				9402E23329BA87BB008AEB09 /* SwiftAGDS */,
+				9402E23229BA87BB008AEB09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9402E23229BA87BB008AEB09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9402E23129BA87BB008AEB09 /* SwiftAGDS */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9402E23329BA87BB008AEB09 /* SwiftAGDS */ = {
+			isa = PBXGroup;
+			children = (
+				947B60BC29DF69ED00339B2B /* Topology */,
+				947B60A829DCB60200339B2B /* FloodFill */,
+				9447BC7029CD291C0090706C /* Tree */,
+				9447BC5D29CA543D0090706C /* Graph */,
+				9447BC5629C8F3410090706C /* StackQueue */,
+				9447BC5329C51F870090706C /* DesigningAlgorithms */,
+				9447BC4E29C3B3DF0090706C /* SearchingSorting */,
+				94B839CE29BFBA960034E019 /* N-Queens */,
+				9402E24129BBE05F008AEB09 /* Utils */,
+				9402E23B29BA87C6008AEB09 /* Recursion */,
+				9402E23429BA87BB008AEB09 /* main.swift */,
+			);
+			path = SwiftAGDS;
+			sourceTree = "<group>";
+		};
+		9402E23B29BA87C6008AEB09 /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				9402E23C29BA87E8008AEB09 /* Recursion.swift */,
+				9402E23E29BA91A3008AEB09 /* story.txt */,
+				9402E23F29BBDE32008AEB09 /* ExhaustiveSearch.swift */,
+				94B839D629BFBD6C0034E019 /* BackTracking.swift */,
+			);
+			path = Recursion;
+			sourceTree = "<group>";
+		};
+		9402E24129BBE05F008AEB09 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9402E24229BBE076008AEB09 /* String+DPStringTool.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9447BC4E29C3B3DF0090706C /* SearchingSorting */ = {
+			isa = PBXGroup;
+			children = (
+				9447BC4F29C3B40E0090706C /* Searching.swift */,
+				9447BC5129C3B4280090706C /* Sorting.swift */,
+			);
+			path = SearchingSorting;
+			sourceTree = "<group>";
+		};
+		9447BC5329C51F870090706C /* DesigningAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				9447BC5429C51FA20090706C /* DesigningAlgorithms.swift */,
+			);
+			path = DesigningAlgorithms;
+			sourceTree = "<group>";
+		};
+		9447BC5629C8F3410090706C /* StackQueue */ = {
+			isa = PBXGroup;
+			children = (
+				9447BC5729C8F49A0090706C /* Bag.swift */,
+				9447BC5929C905D40090706C /* Stack.swift */,
+				9447BC5B29C90DB00090706C /* Queue.swift */,
+				947B609F29DB823500339B2B /* IndexPriorityQueue.swift */,
+			);
+			path = StackQueue;
+			sourceTree = "<group>";
+		};
+		9447BC5D29CA543D0090706C /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				9447BC5E29CA545E0090706C /* AdjacencyMetrix.swift */,
+				9447BC6029CA56870090706C /* AdjacencyList.swift */,
+				9447BC6229CA5C010090706C /* BFS.swift */,
+				9447BC6429CA5C0C0090706C /* DFS.swift */,
+				9447BC6629CA80BC0090706C /* ConnectedComponent.swift */,
+				9447BC6829CAB7150090706C /* BipartiteGraph.swift */,
+				9447BC6A29CB720C0090706C /* FindCycle.swift */,
+				9447BC6C29CB87710090706C /* CountCyclicPermutation.swift */,
+				9447BC6E29CBA29E0090706C /* repeatSequence.swift */,
+				947B60AB29DCCD1300339B2B /* BreadthFirstSearch.swift */,
+				947B60AD29DCCD3100339B2B /* Error+CustomErrors.swift */,
+				947B60AF29DCCD5000339B2B /* DepthFirstSearch.swift */,
+				947B60B129DCCE6C00339B2B /* Graph.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		9447BC7029CD291C0090706C /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				9447BC7129CD294F0090706C /* Tree.swift */,
+				9447BC7329CEA30E0090706C /* SearchParent.swift */,
+				9447BC7529CEBE820090706C /* Diameter.swift */,
+				947B60A129DB890C00339B2B /* LowestCommonAncestor.swift */,
+				947B60A629DB9F8600339B2B /* SushiReviews.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		947B60A329DB9D1100339B2B /* SwiftAGDSTests */ = {
+			isa = PBXGroup;
+			children = (
+				947B60BB29DE1BC200339B2B /* SushiCases */,
+				947B60A529DB9D4F00339B2B /* LCATestCases */,
+				947B60A429DB9D3A00339B2B /* parent */,
+			);
+			path = SwiftAGDSTests;
+			sourceTree = "<group>";
+		};
+		947B60A829DCB60200339B2B /* FloodFill */ = {
+			isa = PBXGroup;
+			children = (
+				947B60A929DCB61B00339B2B /* TomatoFarm.swift */,
+				947B60B529DCF06700339B2B /* Bridges.swift */,
+				947B60B729DE0DBD00339B2B /* Town.swift */,
+				947B60B929DE12E700339B2B /* maze.swift */,
+			);
+			path = FloodFill;
+			sourceTree = "<group>";
+		};
+		947B60BC29DF69ED00339B2B /* Topology */ = {
+			isa = PBXGroup;
+			children = (
+				947B60BD29DF6A1600339B2B /* TopologicalSort.swift */,
+			);
+			path = Topology;
+			sourceTree = "<group>";
+		};
+		94B839CE29BFBA960034E019 /* N-Queens */ = {
+			isa = PBXGroup;
+			children = (
+				94B839CF29BFBAF80034E019 /* Board.swift */,
+				94B839D029BFBAF80034E019 /* QueensSolver.swift */,
+			);
+			path = "N-Queens";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9402E23029BA87BB008AEB09 /* SwiftAGDS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9402E23829BA87BB008AEB09 /* Build configuration list for PBXNativeTarget "SwiftAGDS" */;
+			buildPhases = (
+				9402E22D29BA87BB008AEB09 /* Sources */,
+				9402E22E29BA87BB008AEB09 /* Frameworks */,
+				9402E22F29BA87BB008AEB09 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftAGDS;
+			productName = "Swift-AGDS";
+			productReference = 9402E23129BA87BB008AEB09 /* SwiftAGDS */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9402E22929BA87BB008AEB09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9402E23029BA87BB008AEB09 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9402E22C29BA87BB008AEB09 /* Build configuration list for PBXProject "SwiftAGDS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9402E22829BA87BB008AEB09;
+			productRefGroup = 9402E23229BA87BB008AEB09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9402E23029BA87BB008AEB09 /* SwiftAGDS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9402E22D29BA87BB008AEB09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B839D729BFBD6C0034E019 /* BackTracking.swift in Sources */,
+				9402E24029BBDE32008AEB09 /* ExhaustiveSearch.swift in Sources */,
+				9447BC7629CEBE820090706C /* Diameter.swift in Sources */,
+				947B60B829DE0DBD00339B2B /* Town.swift in Sources */,
+				9447BC5829C8F49A0090706C /* Bag.swift in Sources */,
+				947B60B029DCCD5000339B2B /* DepthFirstSearch.swift in Sources */,
+				9447BC6129CA56870090706C /* AdjacencyList.swift in Sources */,
+				947B60A229DB890C00339B2B /* LowestCommonAncestor.swift in Sources */,
+				9447BC5F29CA545E0090706C /* AdjacencyMetrix.swift in Sources */,
+				9447BC5529C51FA20090706C /* DesigningAlgorithms.swift in Sources */,
+				9447BC5C29C90DB00090706C /* Queue.swift in Sources */,
+				947B60B629DCF06700339B2B /* Bridges.swift in Sources */,
+				9447BC5A29C905D40090706C /* Stack.swift in Sources */,
+				947B60BE29DF6A1600339B2B /* TopologicalSort.swift in Sources */,
+				9447BC6D29CB87710090706C /* CountCyclicPermutation.swift in Sources */,
+				9447BC6F29CBA29E0090706C /* repeatSequence.swift in Sources */,
+				9447BC6929CAB7150090706C /* BipartiteGraph.swift in Sources */,
+				9402E23D29BA87E8008AEB09 /* Recursion.swift in Sources */,
+				94B839D129BFBAF80034E019 /* Board.swift in Sources */,
+				9447BC6529CA5C0C0090706C /* DFS.swift in Sources */,
+				947B60AA29DCB61B00339B2B /* TomatoFarm.swift in Sources */,
+				947B60B229DCCE6C00339B2B /* Graph.swift in Sources */,
+				947B60AC29DCCD1300339B2B /* BreadthFirstSearch.swift in Sources */,
+				947B60BA29DE12E700339B2B /* maze.swift in Sources */,
+				9402E23529BA87BB008AEB09 /* main.swift in Sources */,
+				947B60A029DB823500339B2B /* IndexPriorityQueue.swift in Sources */,
+				9402E24329BBE076008AEB09 /* String+DPStringTool.swift in Sources */,
+				9447BC5229C3B4280090706C /* Sorting.swift in Sources */,
+				9447BC7229CD294F0090706C /* Tree.swift in Sources */,
+				947B60AE29DCCD3100339B2B /* Error+CustomErrors.swift in Sources */,
+				9447BC5029C3B40E0090706C /* Searching.swift in Sources */,
+				9447BC6729CA80BC0090706C /* ConnectedComponent.swift in Sources */,
+				94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */,
+				9447BC7429CEA30E0090706C /* SearchParent.swift in Sources */,
+				9447BC6329CA5C010090706C /* BFS.swift in Sources */,
+				947B60A729DB9F8600339B2B /* SushiReviews.swift in Sources */,
+				9447BC6B29CB720C0090706C /* FindCycle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9402E23629BA87BB008AEB09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9402E23729BA87BB008AEB09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9402E23929BA87BB008AEB09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26666M9T3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9402E23A29BA87BB008AEB09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26666M9T3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9402E22C29BA87BB008AEB09 /* Build configuration list for PBXProject "SwiftAGDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9402E23629BA87BB008AEB09 /* Debug */,
+				9402E23729BA87BB008AEB09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9402E23829BA87BB008AEB09 /* Build configuration list for PBXNativeTarget "SwiftAGDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9402E23929BA87BB008AEB09 /* Debug */,
+				9402E23A29BA87BB008AEB09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9402E22929BA87BB008AEB09 /* Project object */;
+}
