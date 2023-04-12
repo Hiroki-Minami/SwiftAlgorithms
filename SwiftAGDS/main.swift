@@ -48,9 +48,7 @@ import Foundation
 //print(unsorted)
 
 var list = [6,4,2,3,6,5,7,1,8,4,5,3,2,7,1,1]
-var list2 = [(1,2)]
-//list.contains { $0 != 0}
-
+var list2: [Character] = ["a", "b"]
 
 //for a in list[2...] {
 //  print(a)
@@ -143,7 +141,8 @@ var list2 = [(1,2)]
 
 //lowestCommonAncestor()
 //sushiReviews()
-//testSushiReviewsInputFile()s
+testSushiReviewsInputFile()
 //town()
 //tomatoFarm()
-briges()
+//briges()
+
