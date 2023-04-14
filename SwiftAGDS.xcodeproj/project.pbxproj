@@ -47,6 +47,11 @@
 		94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D029BFBAF80034E019 /* QueensSolver.swift */; };
 		94B839D729BFBD6C0034E019 /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D629BFBD6C0034E019 /* BackTracking.swift */; };
 		94F1E11129E624ED00911BEA /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11029E624EC00911BEA /* UF.swift */; };
+		94F1E11429E8A0BD00911BEA /* MeetingRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11329E8A0BD00911BEA /* MeetingRooms.swift */; };
+		94F1E11629E8ACB800911BEA /* TwoCityScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11529E8ACB800911BEA /* TwoCityScheduling.swift */; };
+		94F1E11829E8BA7700911BEA /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11729E8BA7700911BEA /* GasStation.swift */; };
+		94F1E11A29E8D73500911BEA /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11929E8D73500911BEA /* PartitionLabels.swift */; };
+		94F1E11C29E9CA8900911BEA /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11B29E9CA8900911BEA /* TaskScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +112,11 @@
 		94B839D029BFBAF80034E019 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		94B839D629BFBD6C0034E019 /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
 		94F1E11029E624EC00911BEA /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
+		94F1E11329E8A0BD00911BEA /* MeetingRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRooms.swift; sourceTree = "<group>"; };
+		94F1E11529E8ACB800911BEA /* TwoCityScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCityScheduling.swift; sourceTree = "<group>"; };
+		94F1E11729E8BA7700911BEA /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
+		94F1E11929E8D73500911BEA /* PartitionLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
+		94F1E11B29E9CA8900911BEA /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,7 @@
 		9402E23329BA87BB008AEB09 /* SwiftAGDS */ = {
 			isa = PBXGroup;
 			children = (
+				94F1E11229E8A06E00911BEA /* GreedyAlgorithms */,
 				947B60BC29DF69ED00339B2B /* Topology */,
 				947B60A829DCB60200339B2B /* FloodFill */,
 				9447BC7029CD291C0090706C /* Tree */,
@@ -275,6 +286,18 @@
 			path = "N-Queens";
 			sourceTree = "<group>";
 		};
+		94F1E11229E8A06E00911BEA /* GreedyAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				94F1E11329E8A0BD00911BEA /* MeetingRooms.swift */,
+				94F1E11529E8ACB800911BEA /* TwoCityScheduling.swift */,
+				94F1E11729E8BA7700911BEA /* GasStation.swift */,
+				94F1E11929E8D73500911BEA /* PartitionLabels.swift */,
+				94F1E11B29E9CA8900911BEA /* TaskScheduler.swift */,
+			);
+			path = GreedyAlgorithms;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,8 +369,12 @@
 				9447BC5529C51FA20090706C /* DesigningAlgorithms.swift in Sources */,
 				9447BC5C29C90DB00090706C /* Queue.swift in Sources */,
 				947B60B629DCF06700339B2B /* Bridges.swift in Sources */,
+				94F1E11C29E9CA8900911BEA /* TaskScheduler.swift in Sources */,
 				9447BC5A29C905D40090706C /* Stack.swift in Sources */,
 				947B60BE29DF6A1600339B2B /* TopologicalSort.swift in Sources */,
+				94F1E11629E8ACB800911BEA /* TwoCityScheduling.swift in Sources */,
+				94F1E11429E8A0BD00911BEA /* MeetingRooms.swift in Sources */,
+				94F1E11829E8BA7700911BEA /* GasStation.swift in Sources */,
 				9447BC6D29CB87710090706C /* CountCyclicPermutation.swift in Sources */,
 				947B60C029E0966900339B2B /* CourseSchedule.swift in Sources */,
 				9447BC6F29CBA29E0090706C /* repeatSequence.swift in Sources */,
@@ -367,6 +394,7 @@
 				947B60AE29DCCD3100339B2B /* Error+CustomErrors.swift in Sources */,
 				9447BC5029C3B40E0090706C /* Searching.swift in Sources */,
 				9447BC6729CA80BC0090706C /* ConnectedComponent.swift in Sources */,
+				94F1E11A29E8D73500911BEA /* PartitionLabels.swift in Sources */,
 				94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */,
 				9447BC7429CEA30E0090706C /* SearchParent.swift in Sources */,
 				9447BC6329CA5C010090706C /* BFS.swift in Sources */,

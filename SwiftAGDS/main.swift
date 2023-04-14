@@ -48,7 +48,15 @@ import Foundation
 //print(unsorted)
 
 var list = [6,4,2,3,6,5,7,1,8,4,5,3,2,7,1,1]
+
 var list2: [Character] = ["a", "b"]
+var list3 = [[1,2],[2,3]]
+//print(list3[0].remove(at: 0))
+
+for hidani in list3.enumerated() {
+  
+}
+//print(list3.contains([2,2]))
 
 //for a in list[2...] {
 //  print(a)
@@ -141,8 +149,54 @@ var list2: [Character] = ["a", "b"]
 
 //lowestCommonAncestor()
 //sushiReviews()
-testSushiReviewsInputFile()
+//testSushiReviewsInputFile()
 //town()
 //tomatoFarm()
 //briges()
 
+//var intervals = [[0, 30], [5,10], [15,20]]
+//var intervals = [[7,10], [2,4]]
+//print(canAttendMeetings(intervals))
+
+//var str = "dknaodn"
+//var nadnian: [Set<String>] = [Set<String>()]
+//let haiudnf = str.lastIndex(of: "d")!
+//let irutogjroj = str.startIndex
+//print(str[irutogjroj...haiudnf])
+//print(str[...])
+//print(str.firstIndex(of: "a"))
+//print(str.lastIndex(of: "a"))
+//let ajdnojao = str[str.startIndex]
+//str.contains(ajdnojao)
+//str += String(ajdnojao)
+//print(str.lastIndex(of: ajdnojao)!)
+//print(haiudnf)
+//print(haiudnf == str.lastIndex(of: ajdnojao)!)
+//print(str.index(after: str.startIndex))
+//print(str[str.startIndex])
+//print(str[str.index(str.startIndex, offsetBy: 2)])
+//print(str.index(str.startIndex, offsetBy: 2))
+//print(str.endIndex)
+////print(str[str.endIndex])
+//
+//let listidi: [String] = ["sjh", "usnd"]
+//let baydbabdh = listidi.map({ $0.count })
+//let andojnaindfanf = ""
+//print(andojnaindfanf.count)
+//
+//var auindiufaMap: [Character: Int] = [:]
+//for ch in str {
+//  auindiufaMap[ch, default: 0] += 1
+//}
+//
+//print(auindiufaMap.values.max()!)
+//print(auindiufaMap.keys.count)
+//
+//print(auindiufaMap)
+//
+//var nauidnfoaundofba = Set<Int>()
+//nauidnfoaundofba.removeAll()
+//
+//var anidubai: Character? = nil
+
+print(leastInterval(["A","A","A","B","B","B"], 0))
