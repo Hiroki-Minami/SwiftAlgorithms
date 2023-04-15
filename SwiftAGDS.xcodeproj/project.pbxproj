@@ -52,6 +52,8 @@
 		94F1E11829E8BA7700911BEA /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11729E8BA7700911BEA /* GasStation.swift */; };
 		94F1E11A29E8D73500911BEA /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11929E8D73500911BEA /* PartitionLabels.swift */; };
 		94F1E11C29E9CA8900911BEA /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11B29E9CA8900911BEA /* TaskScheduler.swift */; };
+		94F1E12029E9E53200911BEA /* MinimumCostFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11F29E9E53200911BEA /* MinimumCostFlow.swift */; };
+		94F1E12229E9E59800911BEA /* MinimumSpanningTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12129E9E59800911BEA /* MinimumSpanningTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,6 +119,9 @@
 		94F1E11729E8BA7700911BEA /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		94F1E11929E8D73500911BEA /* PartitionLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
 		94F1E11B29E9CA8900911BEA /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
+		94F1E11E29E9E51600911BEA /* mcf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mcf; sourceTree = "<group>"; };
+		94F1E11F29E9E53200911BEA /* MinimumCostFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCostFlow.swift; sourceTree = "<group>"; };
+		94F1E12129E9E59800911BEA /* MinimumSpanningTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumSpanningTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +155,7 @@
 		9402E23329BA87BB008AEB09 /* SwiftAGDS */ = {
 			isa = PBXGroup;
 			children = (
+				94F1E11D29E9E4D800911BEA /* MST */,
 				94F1E11229E8A06E00911BEA /* GreedyAlgorithms */,
 				947B60BC29DF69ED00339B2B /* Topology */,
 				947B60A829DCB60200339B2B /* FloodFill */,
@@ -249,6 +255,7 @@
 		947B60A329DB9D1100339B2B /* SwiftAGDSTests */ = {
 			isa = PBXGroup;
 			children = (
+				94F1E11E29E9E51600911BEA /* mcf */,
 				947B60BB29DE1BC200339B2B /* SushiCases */,
 				947B60A529DB9D4F00339B2B /* LCATestCases */,
 				947B60A429DB9D3A00339B2B /* parent */,
@@ -296,6 +303,15 @@
 				94F1E11B29E9CA8900911BEA /* TaskScheduler.swift */,
 			);
 			path = GreedyAlgorithms;
+			sourceTree = "<group>";
+		};
+		94F1E11D29E9E4D800911BEA /* MST */ = {
+			isa = PBXGroup;
+			children = (
+				94F1E11F29E9E53200911BEA /* MinimumCostFlow.swift */,
+				94F1E12129E9E59800911BEA /* MinimumSpanningTree.swift */,
+			);
+			path = MST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,12 +405,14 @@
 				9402E23529BA87BB008AEB09 /* main.swift in Sources */,
 				947B60A029DB823500339B2B /* IndexPriorityQueue.swift in Sources */,
 				9402E24329BBE076008AEB09 /* String+DPStringTool.swift in Sources */,
+				94F1E12229E9E59800911BEA /* MinimumSpanningTree.swift in Sources */,
 				9447BC5229C3B4280090706C /* Sorting.swift in Sources */,
 				9447BC7229CD294F0090706C /* Tree.swift in Sources */,
 				947B60AE29DCCD3100339B2B /* Error+CustomErrors.swift in Sources */,
 				9447BC5029C3B40E0090706C /* Searching.swift in Sources */,
 				9447BC6729CA80BC0090706C /* ConnectedComponent.swift in Sources */,
 				94F1E11A29E8D73500911BEA /* PartitionLabels.swift in Sources */,
+				94F1E12029E9E53200911BEA /* MinimumCostFlow.swift in Sources */,
 				94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */,
 				9447BC7429CEA30E0090706C /* SearchParent.swift in Sources */,
 				9447BC6329CA5C010090706C /* BFS.swift in Sources */,

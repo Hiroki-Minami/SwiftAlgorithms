@@ -199,4 +199,6 @@ for hidani in list3.enumerated() {
 //
 //var anidubai: Character? = nil
 
-print(leastInterval(["A","A","A","B","B","B"], 0))
+//print(leastInterval(["A","A","A","B","B","B"], 0))
+//minimumCostFlow()
+testMinimumCostFlowInputFile()
