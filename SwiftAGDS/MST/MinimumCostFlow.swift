@@ -14,8 +14,6 @@ func minimumCostFlow() {
   let d = firstLine[2]
   
   var adjList = [[(v: Int, w: Int, valid: Bool)]](repeating: [], count: n + 1)
-  var validPlan = [[(v: Int, w: Int, valid: Bool)]](repeating: [], count: n + 1)
-  var inactives = [[(v: Int, w: Int, valid: Bool)]](repeating: [], count: n + 1)
   
   for _ in 0..<n-1 {
     let input = readLine()!.split(separator: " ").map { Int($0)! }
@@ -24,10 +22,6 @@ func minimumCostFlow() {
     let c = input[2]
     
     adjList[u].append((v, c, true))
-    adjList[v].append((u, c, true))
-    
-    validPlan[u].append((v, c, true))
-    validPlan[v].append((u, c, true))
   }
   
   for _ in 0..<(m-(n-1)) {
@@ -37,42 +31,43 @@ func minimumCostFlow() {
     let c = input[2]
     
     adjList[u].append((v, c, false))
-    adjList[v].append((u, c, false))
-    
-    inactives[u].append((v, c, false))
-    inactives[v].append((u, c, false))
   }
   
   // minimum spanning tree
-  let (mstEdges, replacedEdges) = MCFKruskalMST(adjList)
-  print(MCFCalculation(mstEdges, replacedEdges, adjList, d))
+//  print(MCFKruskalMST(adjList, d))
+  let (mstEdges, newEdges, replacedEdges) = MCFKruskalMST(adjList, d)
+  print(MCFCalculation(mstEdges, newEdges, replacedEdges, adjList, d))
 }
 
-func MCFCalculation(_ mstEdges: [(u: Int, v: Int, w: Int, valid: Bool)], _ replacedEdges: [(u: Int, v: Int, w: Int)], _ adjList: [[(v: Int, w: Int, valid: Bool)]], _ d: Int) -> Int {
+func MCFCalculation(_ mstEdges: [(u: Int, v: Int, w: Int, valid: Bool)], _ newEdges: [(u: Int, v: Int, w: Int)], _ replacedEdges: [(u: Int, v: Int, w: Int)], _ adjList: [[(v: Int, w: Int, valid: Bool)]], _ d: Int) -> Int {
   if replacedEdges.isEmpty {
     return 0
   }
-  let newEdges = mstEdges.filter({ !$0.valid })
+  var newEdges = newEdges
+//  let newEdges = mstEdges.filter({ !$0.valid })
+//  print("newEdges: \(newEdges.count), replaced: \(replacedEdges.count)")
   var uf = UF(adjList.count + 1)
   
   for edge in mstEdges.filter({ $0.valid }) {
     uf.union(edge.u, edge.v)
   }
   
-  var pairs = [(old: Int, new: Int)]()
-  for (i, replaced) in replacedEdges.enumerated() {
+  var distances = [Int]()
+  for (_, replaced) in replacedEdges.enumerated() {
     var checkUf = uf
     checkUf.union(replaced.u, replaced.v)
     for (j, newEdge) in newEdges.enumerated() {
       if uf.connected(newEdge.u, newEdge.v) {
-        pairs.append((i, j))
+        distances.append(replaced.w - newEdge.w)
+        newEdges.remove(at: j)
+        break
       }
     }
   }
   
   var days = 0
-  for (old, new) in pairs {
-    if (replacedEdges[old].w - newEdges[new].w) <= d {
+  for distance in distances {
+    if distance <= d {
       days -= 1
       break
     }
@@ -81,30 +76,94 @@ func MCFCalculation(_ mstEdges: [(u: Int, v: Int, w: Int, valid: Bool)], _ repla
   return days
 }
 
-func MCFKruskalMST(_ graph: [[(v: Int, w: Int, valid: Bool)]]) -> (mstEdges: [(u: Int, v: Int, w: Int, valid: Bool)], replacedEdges: [(u: Int, v: Int, w: Int)]) {
+func MCFKruskalMST(_ graph: [[(v: Int, w: Int, valid: Bool)]], _ d: Int) -> (mstEdges: [(u: Int, v: Int, w: Int, valid: Bool)], newEdges: [(u: Int, v: Int, w: Int)], replacedEdges: [(u: Int, v: Int, w: Int)]) {
+//func MCFKruskalMST(_ graph: [[(v: Int, w: Int, valid: Bool)]], _ d: Int) -> Int {
   var allEdges = [(u: Int, v: Int, w: Int, valid: Bool)]()
+//  var allEdgesEnhanced = [(u: Int, v: Int, w: Int, valid: Bool)]()
   
   for (u, edges) in graph.enumerated() {
     for edge in edges {
       allEdges.append((u, edge.v, edge.w, edge.valid))
+//      if edge.valid {
+//        let weight = (edge.w - d) >= 0 ? (edge.w - d) : 0
+//        allEdgesEnhanced.append((u, edge.v, weight, edge.valid))
+//      } else {
+//        allEdgesEnhanced.append((u, edge.v, edge.w, edge.valid))
+//      }
     }
   }
-  allEdges.sort { $0.w < $1.w }
+  
+  allEdges.sort { (edgeOne, edgeTwo) -> Bool in
+    if edgeOne.w == edgeTwo.w {
+      return edgeOne.valid && !edgeTwo.valid
+    } else {
+      return edgeOne.w < edgeTwo.w
+    }
+  }
+  
+//  allEdgesEnhanced.sort { (edgeOne, edgeTwo) -> Bool in
+//    if edgeOne.w == edgeTwo.w {
+//      return edgeOne.valid && !edgeTwo.valid
+//    } else {
+//      return edgeOne.w < edgeTwo.w
+//    }
+//  }
+//  for edge in allEdges {
+//    print(edge)
+//  }
+  
+//  print(allEdges)
+//  allEdgesEnhanced.sort { $0.w < $1.w }
+  
   var mstEdges = [(u: Int, v: Int, w: Int, valid: Bool)]()
   var replacedEdges = [(u: Int, v: Int, w: Int)]()
+  var newEdges = [(u: Int, v: Int, w: Int)]()
+  var newEdgesEnhanced = [(u: Int, v: Int, w: Int)]()
   
   var uf = UF(graph.count + 1)
+//  var ufEnhanced = UF(graph.count + 1)
   
   for edge in allEdges {
     if uf.connected(edge.u, edge.v) {
-      if !edge.valid { continue }
-      replacedEdges.append((edge.u, edge.v, edge.w))
+      if !edge.valid {
+        replacedEdges.append((edge.u, edge.v, edge.w))
+      }
       continue
+    }
+    if !edge.valid {
+      newEdges.append((edge.u, edge.v, edge.w))
     }
     mstEdges.append(edge)
     uf.union(edge.u, edge.v)
   }
-  return (mstEdges, replacedEdges)
+  
+//  for edge in allEdgesEnhanced {
+//    if ufEnhanced.connected(edge.u, edge.v) {
+//      continue
+//    }
+//    if !edge.valid {
+//      newEdgesEnhanced.append((edge.u, edge.v, edge.w))
+//    }
+//    ufEnhanced.union(edge.u, edge.v)
+//  }
+  
+//  print("newEdges: \(newEdges.count)")
+//  print("newEdgesEnhanced: \(newEdgesEnhanced.count)")
+//  let days = newEdges.count > newEdgesEnhanced.count ? newEdges.count - 1: newEdges.count
+//  print("days: \(days)")
+//  return days
+//  var allEdgesEnhanced = [(u: Int, v: Int, w: Int, valid: Bool)]()
+//  
+//  for mstEdge in mstEdges {
+//      if mstEdge.valid {
+//        let weight = (mstEdge.w - d) >= 0 ? (mstEdge.w - d) : 0
+//        allEdgesEnhanced.append((mstEdge.u, mstEdge.v, weight, mstEdge.valid))
+//      } else {
+//        allEdgesEnhanced.append((mstEdge.u, mstEdge.v, mstEdge.w, mstEdge.valid))
+//      }
+//  }
+  
+  return (mstEdges, newEdges, replacedEdges)
 }
 
 func minimumCostFlowFile(inFile: String) -> Int {
@@ -115,8 +174,6 @@ func minimumCostFlowFile(inFile: String) -> Int {
   let d = firstLine[2]
   
   var adjList = [[(v: Int, w: Int, valid: Bool)]](repeating: [], count: n + 1)
-  var validPlan = [[(v: Int, w: Int, valid: Bool)]](repeating: [], count: n + 1)
-  var inactives = [[(v: Int, w: Int, valid: Bool)]](repeating: [], count: n + 1)
   
   for i in 1..<n {
     let input = contents[i].split(separator: " ").map { Int($0)! }
@@ -125,14 +182,9 @@ func minimumCostFlowFile(inFile: String) -> Int {
     let c = input[2]
     
     adjList[u].append((v, c, true))
-    adjList[v].append((u, c, true))
-    
-    validPlan[u].append((v, c, true))
-    validPlan[v].append((u, c, true))
+//    adjList[v].append((u, c, true))
   }
-  
-//  print(n)
-//  print(contents.count)
+
   if n == contents.count { return 0 }
   for i in n..<contents.count-1 {
     let input = contents[i].split(separator: " ").map { Int($0)! }
@@ -141,15 +193,14 @@ func minimumCostFlowFile(inFile: String) -> Int {
     let c = input[2]
     
     adjList[u].append((v, c, false))
-    adjList[v].append((u, c, false))
-    
-    inactives[u].append((v, c, false))
-    inactives[v].append((u, c, false))
+//    adjList[v].append((u, c, false))
   }
+//  print(adjList)
   
   // minimum spanning tree
-  let (mstEdges, replacedEdges) = MCFKruskalMST(adjList)
-  return MCFCalculation(mstEdges, replacedEdges, adjList, d)
+//  return MCFKruskalMST(adjList, d)
+  let (mstEdges, newEdges, replacedEdges) = MCFKruskalMST(adjList, d)
+  return MCFCalculation(mstEdges, newEdges, replacedEdges, adjList, d)
 }
 
 func testMinimumCostFlowInputFile() {
@@ -170,9 +221,9 @@ func testMinimumCostFlowInputFile() {
       
       if results != expect[0] {
         failed += 1
-        print("Test falied: in file: \(content)")
+        print("Test falied: in file: \(content). result: \(results), expect: \(expect[0])")
       } else {
-        print("Done: in file: \(content)")
+        print("Done: in file: \(content). result: \(results)")
       }
     }
   }

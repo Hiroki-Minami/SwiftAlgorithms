@@ -1050,5 +1050,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C922C80-BEED-4A73-A95D-53DB2A809A9F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAGDS/MST/MinimumSpanningTree.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "kruskalMST(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C096E2AE-87AD-4CB8-8D92-56BAD3DA93C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAGDS/MST/MinimumCostFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "MCFKruskalMST(_:_:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B3E2597-6C0F-41F5-9B38-C29BA6ED1359"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAGDS/MST/MinimumCostFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "MCFKruskalMST(_:_:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "1B3E2597-6C0F-41F5-9B38-C29BA6ED1359 - 6899addcdcb35d36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftAGDS.MCFKruskalMST(Swift.Array&lt;Swift.Array&lt;(v: Swift.Int, w: Swift.Int, valid: Swift.Bool)&gt;&gt;) -&gt; Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "SwiftAGDS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minamihiroki/Desktop/WMAD_Program/Swift-AGDS/SwiftAGDS/MST/MinimumCostFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "1B3E2597-6C0F-41F5-9B38-C29BA6ED1359 - 6835b22e4bed850a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftAGDS.MCFKruskalMST(Swift.Array&lt;Swift.Array&lt;(v: Swift.Int, w: Swift.Int, valid: Swift.Bool)&gt;&gt;) -&gt; (mstEdges: Swift.Array&lt;(u: Swift.Int, v: Swift.Int, w: Swift.Int, valid: Swift.Bool)&gt;, newEdges: Swift.Array&lt;(u: Swift.Int, v: Swift.Int, w: Swift.Int)&gt;, replacedEdges: Swift.Array&lt;(u: Swift.Int, v: Swift.Int, w: Swift.Int)&gt;)"
+                  moduleName = "SwiftAGDS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minamihiroki/Desktop/WMAD_Program/Swift-AGDS/SwiftAGDS/MST/MinimumCostFlow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "800">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
