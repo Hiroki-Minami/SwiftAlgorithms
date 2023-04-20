@@ -223,3 +223,15 @@ for hidani in list3.enumerated() {
 
 //print(minimumEffortPath([[1,10,6,7,9,10,4,9]]))
 //print(minimumEffortPath([[1,2,2],[4,8,2],[5,3,5]]))
+
+//var andiufnbai = [Int: [Bool]]()
+//andiufnbai[0] = [false]
+//andiufnbai[1] = [true]
+//let akjdnfja = andiufnbai.keys.sorted(by: >)
+//for i in akjdnfja {
+//  print(i)
+//}
+//let naundnajdn = andiufnbai[1]!.reversed()
+//var ndjandj = 3
+
+floyd()
