@@ -54,6 +54,13 @@
 		94F1E11C29E9CA8900911BEA /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11B29E9CA8900911BEA /* TaskScheduler.swift */; };
 		94F1E12029E9E53200911BEA /* MinimumCostFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E11F29E9E53200911BEA /* MinimumCostFlow.swift */; };
 		94F1E12229E9E59800911BEA /* MinimumSpanningTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12129E9E59800911BEA /* MinimumSpanningTree.swift */; };
+		94F1E12529EF4F2900911BEA /* DijkstraArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12429EF4F2900911BEA /* DijkstraArray.swift */; };
+		94F1E12729EF4F4200911BEA /* DijkstraPQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12629EF4F4200911BEA /* DijkstraPQ.swift */; };
+		94F1E12929EF7C6600911BEA /* NetworkDelayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12829EF7C6600911BEA /* NetworkDelayTime.swift */; };
+		94F1E12B29EF86EC00911BEA /* CheapestFlightsWithinKStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12A29EF86EC00911BEA /* CheapestFlightsWithinKStops.swift */; };
+		94F1E12D29F0439E00911BEA /* PathwithMaximumProbability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12C29F0439E00911BEA /* PathwithMaximumProbability.swift */; };
+		94F1E12F29F0633A00911BEA /* PathWithMinimumEffort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E12E29F0633A00911BEA /* PathWithMinimumEffort.swift */; };
+		94F1E13129F0842D00911BEA /* BellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13029F0842D00911BEA /* BellmanFord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +129,13 @@
 		94F1E11E29E9E51600911BEA /* mcf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mcf; sourceTree = "<group>"; };
 		94F1E11F29E9E53200911BEA /* MinimumCostFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCostFlow.swift; sourceTree = "<group>"; };
 		94F1E12129E9E59800911BEA /* MinimumSpanningTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumSpanningTree.swift; sourceTree = "<group>"; };
+		94F1E12429EF4F2900911BEA /* DijkstraArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraArray.swift; sourceTree = "<group>"; };
+		94F1E12629EF4F4200911BEA /* DijkstraPQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraPQ.swift; sourceTree = "<group>"; };
+		94F1E12829EF7C6600911BEA /* NetworkDelayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTime.swift; sourceTree = "<group>"; };
+		94F1E12A29EF86EC00911BEA /* CheapestFlightsWithinKStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapestFlightsWithinKStops.swift; sourceTree = "<group>"; };
+		94F1E12C29F0439E00911BEA /* PathwithMaximumProbability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathwithMaximumProbability.swift; sourceTree = "<group>"; };
+		94F1E12E29F0633A00911BEA /* PathWithMinimumEffort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathWithMinimumEffort.swift; sourceTree = "<group>"; };
+		94F1E13029F0842D00911BEA /* BellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellmanFord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +169,7 @@
 		9402E23329BA87BB008AEB09 /* SwiftAGDS */ = {
 			isa = PBXGroup;
 			children = (
+				94F1E12329EF4EFA00911BEA /* ShortestPath */,
 				94F1E11D29E9E4D800911BEA /* MST */,
 				94F1E11229E8A06E00911BEA /* GreedyAlgorithms */,
 				947B60BC29DF69ED00339B2B /* Topology */,
@@ -314,6 +329,20 @@
 			path = MST;
 			sourceTree = "<group>";
 		};
+		94F1E12329EF4EFA00911BEA /* ShortestPath */ = {
+			isa = PBXGroup;
+			children = (
+				94F1E12429EF4F2900911BEA /* DijkstraArray.swift */,
+				94F1E12629EF4F4200911BEA /* DijkstraPQ.swift */,
+				94F1E12829EF7C6600911BEA /* NetworkDelayTime.swift */,
+				94F1E12A29EF86EC00911BEA /* CheapestFlightsWithinKStops.swift */,
+				94F1E12C29F0439E00911BEA /* PathwithMaximumProbability.swift */,
+				94F1E12E29F0633A00911BEA /* PathWithMinimumEffort.swift */,
+				94F1E13029F0842D00911BEA /* BellmanFord.swift */,
+			);
+			path = ShortestPath;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -377,12 +406,15 @@
 				9447BC7629CEBE820090706C /* Diameter.swift in Sources */,
 				947B60B829DE0DBD00339B2B /* Town.swift in Sources */,
 				9447BC5829C8F49A0090706C /* Bag.swift in Sources */,
+				94F1E12F29F0633A00911BEA /* PathWithMinimumEffort.swift in Sources */,
 				947B60B029DCCD5000339B2B /* DepthFirstSearch.swift in Sources */,
 				9447BC6129CA56870090706C /* AdjacencyList.swift in Sources */,
 				947B60A229DB890C00339B2B /* LowestCommonAncestor.swift in Sources */,
 				9447BC5F29CA545E0090706C /* AdjacencyMetrix.swift in Sources */,
 				947B60C229E0B2D900339B2B /* CourseScheduleII.swift in Sources */,
+				94F1E12D29F0439E00911BEA /* PathwithMaximumProbability.swift in Sources */,
 				9447BC5529C51FA20090706C /* DesigningAlgorithms.swift in Sources */,
+				94F1E12929EF7C6600911BEA /* NetworkDelayTime.swift in Sources */,
 				9447BC5C29C90DB00090706C /* Queue.swift in Sources */,
 				947B60B629DCF06700339B2B /* Bridges.swift in Sources */,
 				94F1E11C29E9CA8900911BEA /* TaskScheduler.swift in Sources */,
@@ -394,9 +426,11 @@
 				9447BC6D29CB87710090706C /* CountCyclicPermutation.swift in Sources */,
 				947B60C029E0966900339B2B /* CourseSchedule.swift in Sources */,
 				9447BC6F29CBA29E0090706C /* repeatSequence.swift in Sources */,
+				94F1E12B29EF86EC00911BEA /* CheapestFlightsWithinKStops.swift in Sources */,
 				9447BC6929CAB7150090706C /* BipartiteGraph.swift in Sources */,
 				9402E23D29BA87E8008AEB09 /* Recursion.swift in Sources */,
 				94B839D129BFBAF80034E019 /* Board.swift in Sources */,
+				94F1E12529EF4F2900911BEA /* DijkstraArray.swift in Sources */,
 				9447BC6529CA5C0C0090706C /* DFS.swift in Sources */,
 				947B60AA29DCB61B00339B2B /* TomatoFarm.swift in Sources */,
 				947B60B229DCCE6C00339B2B /* Graph.swift in Sources */,
@@ -411,6 +445,8 @@
 				947B60AE29DCCD3100339B2B /* Error+CustomErrors.swift in Sources */,
 				9447BC5029C3B40E0090706C /* Searching.swift in Sources */,
 				9447BC6729CA80BC0090706C /* ConnectedComponent.swift in Sources */,
+				94F1E13129F0842D00911BEA /* BellmanFord.swift in Sources */,
+				94F1E12729EF4F4200911BEA /* DijkstraPQ.swift in Sources */,
 				94F1E11A29E8D73500911BEA /* PartitionLabels.swift in Sources */,
 				94F1E12029E9E53200911BEA /* MinimumCostFlow.swift in Sources */,
 				94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */,

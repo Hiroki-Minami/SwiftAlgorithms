@@ -48,6 +48,7 @@ import Foundation
 //print(unsorted)
 
 var list = [6,4,2,3,6,5,7,1,8,4,5,3,2,7,1,1]
+var set = Set<Int>()
 
 var list2: [Character] = ["a", "b"]
 var list3 = [[1,2],[2,3]]
@@ -201,4 +202,24 @@ for hidani in list3.enumerated() {
 
 //print(leastInterval(["A","A","A","B","B","B"], 0))
 //minimumCostFlow()
-testMinimumCostFlowInputFile()
+//testMinimumCostFlowInputFile()
+//let times = [[3,5,78],[2,1,1],[1,3,0],[4,3,59],[5,3,85],[5,2,22],[2,4,23],[1,4,43],[4,5,75],[5,1,15],[1,5,91],[4,1,16],[3,2,98],[3,4,22],[5,4,31],[1,2,0],[2,5,4],[4,2,51],[3,1,36],[2,3,59]]
+//print(networkDelayTime(times, 5, 5))
+//let flights = [[0,1,1],[0,2,5],[1,2,1],[2,3,1]]
+//print(findCheapestPrice(4, flights, 0, 3, 1))
+//print(findCheapestPrice(100, flights, 1, 99, 99))
+//let flights = [[0,1,100],[1,2,100],[0,2,500]]
+//print(findCheapestPrice(3, flights, 0, 2, 1))
+//let flights = [[4,1,1],[1,2,3],[0,3,2],[0,4,10],[3,1,1],[1,4,3]]
+//print(findCheapestPrice(5, flights, 2, 1, 1))
+//let flights = [[2,0,1],[2,1,10],[0,3,5],[1,2,1],[3,2,6],[2,3,3]]
+//print(findCheapestPrice(4, flights, 3, 2, 3))
+//print(log(0.5))
+//print(log(0.2))
+//var ajodjfoa = log(0.5) + log(0.5)
+//print(exp(ajodjfoa))
+//let edges = [[0,1],[1,2],[0,2]]
+//print(maxProbability(3, edges, [0.5, 0.5, 0.2], 0, 2))
+
+//print(minimumEffortPath([[1,10,6,7,9,10,4,9]]))
+//print(minimumEffortPath([[1,2,2],[4,8,2],[5,3,5]]))
