@@ -47,10 +47,13 @@ import Foundation
 //quickSort(&unsorted, 0, unsorted.count-1)
 //print(unsorted)
 
-var list = [6,4,2,3,6,5,7,1,8,4,5,3,2,7,1,1]
+var list = [6,4,2,3,6,5,7,1,8,4,5,3,2,7,1,1] 
 var set = Set<Int>()
 
-var list2: [Character] = ["a", "b"]
+var list2: [Character] = ["1", "2"]
+for naind in list2 {
+  naind.isNumber
+}
 var list3 = [[1,2],[2,3]]
 //print(list3[0].remove(at: 0))
 
@@ -234,4 +237,11 @@ for hidani in list3.enumerated() {
 //let naundnajdn = andiufnbai[1]!.reversed()
 //var ndjandj = 3
 
-floyd()
+//floyd()
+//print(prettyNumber(n: 3))
+//print(twoByNTiles(n: 2))
+//print(twoTimesNTilesTwo(12))
+//oneTwoThree()
+//print(nonDecreasingDigits(3))
+//print(sumOfSquareNumbers(2624))
+//pokemon()

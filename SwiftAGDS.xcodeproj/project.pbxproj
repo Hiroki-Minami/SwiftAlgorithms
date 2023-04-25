@@ -64,6 +64,18 @@
 		94F1E13329F1D9FA00911BEA /* PathFinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13229F1D9FA00911BEA /* PathFinding.swift */; };
 		94F1E13529F1DA5100911BEA /* Floyd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13429F1DA5100911BEA /* Floyd.swift */; };
 		94F1E13729F1F32800911BEA /* FindtheCityWiththeSmallestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13629F1F32800911BEA /* FindtheCityWiththeSmallestNumber.swift */; };
+		94F1E13A29F333C000911BEA /* MakeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13929F333C000911BEA /* MakeOne.swift */; };
+		94F1E13C29F3364700911BEA /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13B29F3364700911BEA /* ClimbingStairs.swift */; };
+		94F1E13E29F3367300911BEA /* 2TimesNtiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13D29F3367300911BEA /* 2TimesNtiles.swift */; };
+		94F1E14029F336A100911BEA /* twoTimesNTilesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E13F29F336A100911BEA /* twoTimesNTilesTwo.swift */; };
+		94F1E14229F336C100911BEA /* OneTwoThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14129F336C100911BEA /* OneTwoThree.swift */; };
+		94F1E14429F336D200911BEA /* PrettyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14329F336D200911BEA /* PrettyNumber.swift */; };
+		94F1E14629F3513100911BEA /* NonDecreasingDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14529F3513100911BEA /* NonDecreasingDigits.swift */; };
+		94F1E14829F7081300911BEA /* SumOfSquareNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14729F7081300911BEA /* SumOfSquareNumbers.swift */; };
+		94F1E14A29F70FAE00911BEA /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14929F70FAE00911BEA /* Pokemon.swift */; };
+		94F1E14C29F7443C00911BEA /* LongestIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14B29F7443C00911BEA /* LongestIncreasingSubsequence.swift */; };
+		94F1E14E29F8482A00911BEA /* NumDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14D29F8482A00911BEA /* NumDecode.swift */; };
+		94F1E15029F84BEF00911BEA /* MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1E14F29F84BEF00911BEA /* MaximumSubarray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -142,6 +154,18 @@
 		94F1E13229F1D9FA00911BEA /* PathFinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFinding.swift; sourceTree = "<group>"; };
 		94F1E13429F1DA5100911BEA /* Floyd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floyd.swift; sourceTree = "<group>"; };
 		94F1E13629F1F32800911BEA /* FindtheCityWiththeSmallestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindtheCityWiththeSmallestNumber.swift; sourceTree = "<group>"; };
+		94F1E13929F333C000911BEA /* MakeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOne.swift; sourceTree = "<group>"; };
+		94F1E13B29F3364700911BEA /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
+		94F1E13D29F3367300911BEA /* 2TimesNtiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2TimesNtiles.swift; sourceTree = "<group>"; };
+		94F1E13F29F336A100911BEA /* twoTimesNTilesTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoTimesNTilesTwo.swift; sourceTree = "<group>"; };
+		94F1E14129F336C100911BEA /* OneTwoThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTwoThree.swift; sourceTree = "<group>"; };
+		94F1E14329F336D200911BEA /* PrettyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyNumber.swift; sourceTree = "<group>"; };
+		94F1E14529F3513100911BEA /* NonDecreasingDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonDecreasingDigits.swift; sourceTree = "<group>"; };
+		94F1E14729F7081300911BEA /* SumOfSquareNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfSquareNumbers.swift; sourceTree = "<group>"; };
+		94F1E14929F70FAE00911BEA /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		94F1E14B29F7443C00911BEA /* LongestIncreasingSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestIncreasingSubsequence.swift; sourceTree = "<group>"; };
+		94F1E14D29F8482A00911BEA /* NumDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumDecode.swift; sourceTree = "<group>"; };
+		94F1E14F29F84BEF00911BEA /* MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubarray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +199,7 @@
 		9402E23329BA87BB008AEB09 /* SwiftAGDS */ = {
 			isa = PBXGroup;
 			children = (
+				94F1E13829F333AD00911BEA /* DynamicProgramming */,
 				94F1E12329EF4EFA00911BEA /* ShortestPath */,
 				94F1E11D29E9E4D800911BEA /* MST */,
 				94F1E11229E8A06E00911BEA /* GreedyAlgorithms */,
@@ -352,6 +377,25 @@
 			path = ShortestPath;
 			sourceTree = "<group>";
 		};
+		94F1E13829F333AD00911BEA /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				94F1E13929F333C000911BEA /* MakeOne.swift */,
+				94F1E13B29F3364700911BEA /* ClimbingStairs.swift */,
+				94F1E13D29F3367300911BEA /* 2TimesNtiles.swift */,
+				94F1E13F29F336A100911BEA /* twoTimesNTilesTwo.swift */,
+				94F1E14129F336C100911BEA /* OneTwoThree.swift */,
+				94F1E14329F336D200911BEA /* PrettyNumber.swift */,
+				94F1E14529F3513100911BEA /* NonDecreasingDigits.swift */,
+				94F1E14729F7081300911BEA /* SumOfSquareNumbers.swift */,
+				94F1E14929F70FAE00911BEA /* Pokemon.swift */,
+				94F1E14B29F7443C00911BEA /* LongestIncreasingSubsequence.swift */,
+				94F1E14D29F8482A00911BEA /* NumDecode.swift */,
+				94F1E14F29F84BEF00911BEA /* MaximumSubarray.swift */,
+			);
+			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,9 +454,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F1E14829F7081300911BEA /* SumOfSquareNumbers.swift in Sources */,
 				94B839D729BFBD6C0034E019 /* BackTracking.swift in Sources */,
+				94F1E15029F84BEF00911BEA /* MaximumSubarray.swift in Sources */,
 				9402E24029BBDE32008AEB09 /* ExhaustiveSearch.swift in Sources */,
+				94F1E14C29F7443C00911BEA /* LongestIncreasingSubsequence.swift in Sources */,
 				9447BC7629CEBE820090706C /* Diameter.swift in Sources */,
+				94F1E14429F336D200911BEA /* PrettyNumber.swift in Sources */,
 				947B60B829DE0DBD00339B2B /* Town.swift in Sources */,
 				9447BC5829C8F49A0090706C /* Bag.swift in Sources */,
 				94F1E12F29F0633A00911BEA /* PathWithMinimumEffort.swift in Sources */,
@@ -422,18 +470,22 @@
 				9447BC5F29CA545E0090706C /* AdjacencyMetrix.swift in Sources */,
 				947B60C229E0B2D900339B2B /* CourseScheduleII.swift in Sources */,
 				94F1E12D29F0439E00911BEA /* PathwithMaximumProbability.swift in Sources */,
+				94F1E13E29F3367300911BEA /* 2TimesNtiles.swift in Sources */,
 				94F1E13729F1F32800911BEA /* FindtheCityWiththeSmallestNumber.swift in Sources */,
 				9447BC5529C51FA20090706C /* DesigningAlgorithms.swift in Sources */,
+				94F1E14A29F70FAE00911BEA /* Pokemon.swift in Sources */,
 				94F1E12929EF7C6600911BEA /* NetworkDelayTime.swift in Sources */,
 				9447BC5C29C90DB00090706C /* Queue.swift in Sources */,
 				947B60B629DCF06700339B2B /* Bridges.swift in Sources */,
 				94F1E11C29E9CA8900911BEA /* TaskScheduler.swift in Sources */,
 				9447BC5A29C905D40090706C /* Stack.swift in Sources */,
+				94F1E14029F336A100911BEA /* twoTimesNTilesTwo.swift in Sources */,
 				947B60BE29DF6A1600339B2B /* TopologicalSort.swift in Sources */,
 				94F1E11629E8ACB800911BEA /* TwoCityScheduling.swift in Sources */,
 				94F1E11429E8A0BD00911BEA /* MeetingRooms.swift in Sources */,
 				94F1E11829E8BA7700911BEA /* GasStation.swift in Sources */,
 				9447BC6D29CB87710090706C /* CountCyclicPermutation.swift in Sources */,
+				94F1E14E29F8482A00911BEA /* NumDecode.swift in Sources */,
 				947B60C029E0966900339B2B /* CourseSchedule.swift in Sources */,
 				9447BC6F29CBA29E0090706C /* repeatSequence.swift in Sources */,
 				94F1E12B29EF86EC00911BEA /* CheapestFlightsWithinKStops.swift in Sources */,
@@ -462,8 +514,12 @@
 				94F1E12029E9E53200911BEA /* MinimumCostFlow.swift in Sources */,
 				94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */,
 				9447BC7429CEA30E0090706C /* SearchParent.swift in Sources */,
+				94F1E13A29F333C000911BEA /* MakeOne.swift in Sources */,
+				94F1E14629F3513100911BEA /* NonDecreasingDigits.swift in Sources */,
+				94F1E13C29F3364700911BEA /* ClimbingStairs.swift in Sources */,
 				9447BC6329CA5C010090706C /* BFS.swift in Sources */,
 				94F1E13529F1DA5100911BEA /* Floyd.swift in Sources */,
+				94F1E14229F336C100911BEA /* OneTwoThree.swift in Sources */,
 				947B60A729DB9F8600339B2B /* SushiReviews.swift in Sources */,
 				94F1E11129E624ED00911BEA /* UF.swift in Sources */,
 				9447BC6B29CB720C0090706C /* FindCycle.swift in Sources */,
