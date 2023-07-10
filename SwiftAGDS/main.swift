@@ -47,19 +47,21 @@ import Foundation
 //quickSort(&unsorted, 0, unsorted.count-1)
 //print(unsorted)
 
-var list = [6,4,2,3,6,5,7,1,8,4,5,3,2,7,1,1] 
-var set = Set<Int>()
+//var list = [6,4,2,3,6,5,7,1,8,4,5,3,2,7,1,1]
+var list = [9, 14]
+list.max()
+list.reduce(0, +)
+var set = Set<Int>(list)
 
 var list2: [Character] = ["1", "2"]
-for naind in list2 {
-  naind.isNumber
-}
-var list3 = [[1,2],[2,3]]
+//var list3 = [[3,2],[2,3]]
+//list3.sort(by: {$0.0[0] < $0.1[0]})
+
+var list3 = [[3,2],[2,3]]
+//list3.contains(where: { $0[1] })
+list3.sort(by: { $0[0] < $1[0] })
 //print(list3[0].remove(at: 0))
 
-for hidani in list3.enumerated() {
-  
-}
 //print(list3.contains([2,2]))
 
 //for a in list[2...] {
@@ -221,7 +223,9 @@ for hidani in list3.enumerated() {
 //print(log(0.2))
 //var ajodjfoa = log(0.5) + log(0.5)
 //print(exp(ajodjfoa))
-//let edges = [[0,1],[1,2],[0,2]]
+let edges = [[0,1],[1,2],[0,2]]
+let jandojnfa = edges.map({$0[0]})
+//print(edges.flatMap({ $0 }).count)
 //print(maxProbability(3, edges, [0.5, 0.5, 0.2], 0, 2))
 
 //print(minimumEffortPath([[1,10,6,7,9,10,4,9]]))
@@ -245,3 +249,79 @@ for hidani in list3.enumerated() {
 //print(nonDecreasingDigits(3))
 //print(sumOfSquareNumbers(2624))
 //pokemon()
+
+//print(1<<62)
+// 272187084
+// 2199023255552
+// 1073741824 : 30
+// 268435456 :28
+// 536870912 :29
+
+var aoindmap = [1: 2, 2: 3]
+let ndinaijd = aoindmap.filter({ $0.value == 2 }).map({ $0.key })
+//testnajdn.sorted(by: <)
+for (depth, sum) in aoindmap {
+  
+}
+aoindmap.values.max()
+
+func minFlips(_ a: Int, _ b: Int, _ c: Int) -> Int {
+    var aArr = convertToArrayOfReversedBits(a)
+    var bArr = convertToArrayOfReversedBits(b)
+    var cArr = convertToArrayOfReversedBits(c)
+  
+  
+
+    var count = 0
+    for i in 0..<cArr.count {
+        let aBit = i < aArr.count ? aArr[i]: 0
+        let bBit = i < bArr.count ? bArr[i]: 0
+
+        if cArr[i] == 0 {
+            count += aBit + bBit
+        } else {
+            count += aBit == 1 || bBit == 1 ? 0: 1
+        }
+    }
+    return count
+}
+
+func convertToArrayOfReversedBits(_ num: Int) -> [Int] {
+    var bits = [Int]()
+    var num = num
+
+    while num > 0 {
+        let bit = num & 1
+        bits.append(bit)
+        num >>= 1
+    }
+    return bits
+}
+
+//print(minFlips(8, 3, 5))
+
+
+func maxProfit(_ prices: [Int], _ fee: Int) -> Int {
+    let n = prices.count
+    var dp = [[Int]](repeating: [Int](repeating: Int.min, count: n), count: n)
+
+    func maxProfitRecursive(_ index: Int, _ boughtIndex: Int) -> Int {
+        guard index < n else { return 0 }
+        guard dp[index][boughtIndex] == Int.min else { return dp[index][boughtIndex] }
+
+        var boughtIndex = boughtIndex
+        boughtIndex = prices[boughtIndex] > prices[index] ? index: boughtIndex
+
+        if index == boughtIndex || prices[index] - prices[boughtIndex] - fee <= 0 {
+            dp[index][boughtIndex] = maxProfitRecursive(index + 1, boughtIndex)
+        } else {
+            let sold = prices[index] - prices[boughtIndex] - fee + maxProfitRecursive(index + 1, index + 1)
+            let keep = maxProfitRecursive(index + 1, boughtIndex)
+            dp[index][boughtIndex] = max(sold, keep)
+        }
+        return dp[index][boughtIndex]
+    }
+    return maxProfitRecursive(0, 0)
+}
+
+print(maxProfit([1,3,7,5,10,3], 3))

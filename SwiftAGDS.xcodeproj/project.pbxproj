@@ -43,6 +43,7 @@
 		947B60BE29DF6A1600339B2B /* TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60BD29DF6A1600339B2B /* TopologicalSort.swift */; };
 		947B60C029E0966900339B2B /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60BF29E0966900339B2B /* CourseSchedule.swift */; };
 		947B60C229E0B2D900339B2B /* CourseScheduleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B60C129E0B2D900339B2B /* CourseScheduleII.swift */; };
+		9485A1222A01A74500E5330A /* EqualSubsetSubPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9485A1212A01A74500E5330A /* EqualSubsetSubPartition.swift */; };
 		94B839D129BFBAF80034E019 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839CF29BFBAF80034E019 /* Board.swift */; };
 		94B839D229BFBAF80034E019 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D029BFBAF80034E019 /* QueensSolver.swift */; };
 		94B839D729BFBD6C0034E019 /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B839D629BFBD6C0034E019 /* BackTracking.swift */; };
@@ -132,6 +133,7 @@
 		947B60BD29DF6A1600339B2B /* TopologicalSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort.swift; sourceTree = "<group>"; };
 		947B60BF29E0966900339B2B /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		947B60C129E0B2D900339B2B /* CourseScheduleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleII.swift; sourceTree = "<group>"; };
+		9485A1212A01A74500E5330A /* EqualSubsetSubPartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualSubsetSubPartition.swift; sourceTree = "<group>"; };
 		94B839CF29BFBAF80034E019 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		94B839D029BFBAF80034E019 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		94B839D629BFBD6C0034E019 /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 				94F1E14B29F7443C00911BEA /* LongestIncreasingSubsequence.swift */,
 				94F1E14D29F8482A00911BEA /* NumDecode.swift */,
 				94F1E14F29F84BEF00911BEA /* MaximumSubarray.swift */,
+				9485A1212A01A74500E5330A /* EqualSubsetSubPartition.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				94F1E12D29F0439E00911BEA /* PathwithMaximumProbability.swift in Sources */,
 				94F1E13E29F3367300911BEA /* 2TimesNtiles.swift in Sources */,
 				94F1E13729F1F32800911BEA /* FindtheCityWiththeSmallestNumber.swift in Sources */,
+				9485A1222A01A74500E5330A /* EqualSubsetSubPartition.swift in Sources */,
 				9447BC5529C51FA20090706C /* DesigningAlgorithms.swift in Sources */,
 				94F1E14A29F70FAE00911BEA /* Pokemon.swift in Sources */,
 				94F1E12929EF7C6600911BEA /* NetworkDelayTime.swift in Sources */,
